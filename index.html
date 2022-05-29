@@ -18,31 +18,46 @@
   
     <link rel="stylesheet" href="header.css">
     <style>
-    
+     body{
+       height: 100%;
+     }
+     .amodal:hover{
+       border: 1px solid rgb(223, 223, 0)!important; 
+     }
+     #button:hover{
+       border: 3px solid white!important;
+       color: white!important;
+     }
+     .anav:hover{
+       color: rgb(223, 223, 0)!important;
+     }
     </style>
 </head>
 <body>
-    <nav style="border-radius: 28px; margin-left: 1px; margin-right: 1px; position: fixed; z-index: 200;width:100%;">
+    <nav style="border-radius: 0px;position: fixed; z-index: 200;width:100%;top:0px;background-color: #777373b9;height: 50px; ">
 
-        <div class="ui large menu" style="background-color: #766897">
+        <div class="ui large menu" style="background-color: #4a4949;box-shadow: 2px;" id="nav">
           <!-- <a id="logo" class="item" style="width:103px;" href="">
             <img src="image/1Stop_logo-removebg-preview.png" alt="">
           </a> -->
-          <a class="active orange item" style="font-size:19px;" href="index.html">
-            Home
+          <a class="white yellow item" style="font-size:22px; background-color: rgba(241, 241, 0, 0.909); color: rgb(255, 255, 255);" href="index.html">
+           CUBOAT
           </a>
           <div class="right menu">
-            <div class="ui dropdown item" style="font-size:19px;">
-              Goto
+            <!-- <div class="ui dropdown item" style="font-size:19px;"> -->
+              <!-- Goto -->
               <!-- <i class="dropdown icon"></i> -->
-              <div class="menu">
-                <a class="item" href="#header">Banner</a>
-                <a class="item" href="#acheivers">Attraction</a>
-                <a class="item" href="#faculty">Restuarant</a>
+              <!-- <div class="menu"> -->
+                <a class="item anav" href="#header" style="color: white;font-size:19px; margin-right: 2px;">Application</a>
+                <a class="item anav" href="#acheivers" style="color: white;font-size:19px;margin-right: 2px;">Technology</a>
+                <a class="item anav" href="#faculty" style="color: white;font-size:19px;margin-right: 2px;">Research</a>
                 <!-- <a class="item" href="#features">Features</a> -->
-                <a class="item" href="#foot">Footer</a>
-              </div>
-            </div>
+                <a class="item anav" href="#foot" style="color: white;font-size:19px;margin-right: 2px;">NewsRoom</a>
+                <a class="item anav" href="#foot" style="color: white;font-size:19px;margin-right: 2px;">About</a>
+                <a class="item anav" href="#foot" style="color: white;font-size:19px;margin-right: 2px;">SupportUs</a>
+                
+              <!-- </div> -->
+            <!-- </div> -->
             <!-- <div class="right menu">
               <div class="ui dropdown item" style="font-size:19px;">
                 &#9776;</i>
@@ -53,15 +68,15 @@
                   <a class="item" href="">Contact Us</a>
                 </div>
               </div> -->
-              <div class="right menu">
-                <div class="ui dropdown item">
-                  <i class="fa fa-globe" style="font-size:24px"></i>
-                  <div class="menu">
-                    <a class="item" href="">BookRide</a>
+              <!-- <div class="right menu"> -->
+                <!-- <div class="ui dropdown item"> -->
+                  <!-- <i class="fa fa-globe" style="font-size:24px"></i> -->
+                  <!-- <div class="menu"> -->
+                    <!-- <a class="item" href="">BookRide</a> -->
                     <!-- <a class="item" href="">SignUp</a> -->
-    
-                  </div>
-                </div>
+                     
+                  <!-- </div> -->
+                <!-- </div> -->
     
               </div>
             </div>
@@ -73,35 +88,84 @@
 
     <header id="header">
         <!-- <img src="image/header1.jpg"  id="himg" alt=""> -->
-              </header>
+    </header>
         <video autoplay muted loop id="video" style="width: 100%!important;height: 100%!important; object-fit: cover; position: fixed;top:0px;z-index: 3;">
             <source src="image/header.mp4" type="video/mp4">
           </video>
-        <div id="contentan">
-         <h1 style=" color: rgb(226, 148, 2); font-weight: 700; position: relative; top: 30%;">Anarc presents</h1>
+        <div id="contentan" style="text-align: center;">
+         <!-- <h1 style=" color: rgb(226, 148, 2); font-weight: 700; position: relative; top: 30%;">Anarc presents</h1> -->
          <!-- <p style="color: rgb(230, 150, 3);position: relative; top: 30%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sapiente ut deserunt cum totam animi mollitia id cumque earum aperiam!</p> -->
-        
-         <button style="background-color: rgb(204, 201, 201); border-radius: 20px; color: black; width: 170px; height: 50px; position: relative; top: 50%;">Subscribe Us</button>
-        </div>
-        <!-- <div id="content">
-            <div class="ui grid container">
-                <div class="four wide column">
-                    <p style="color: white;">A project made by</p>
-                    <p style="color: white;"><a href="" style="color: white; text-decoration: none;"><p>National</p><p>Institute of</p><p>Technology</p><p>Agartala</p></a></p>
-                </div>
-                <div class="four wide column"></div>
-                <div class="four wide column"></div>
-                <div class="four wide column"></div>
-                <div class="four wide column"></div>
-                <div class="four wide column"></div>
-                <div class="four wide column"></div>
-                <div class="four wide column"></div>
-              </div>
-            
-        </div> -->
-      </header>
-    <footer>
+          <!-- <a href="" style="color: rgb(0, 0, 0); width: 120px; height: 50px; position: fixed; top: 40%; text-align: center;">Subscribe Us</a> -->
+          <button style="color: rgba(255, 255, 255, 0.747); width: 120px; height: 50px; position: fixed; top: 40%; text-align: center;border-radius: 30px; background-color: rgba(240, 248, 255, 0); border: 2px solid rgba(255, 255, 255, 0.735);" onclick="modal()" id="button">send</button>
+          
+          <div class="ui basic modal" style="width: 400px;">
+            <div class="ui icon header">
+              <i class="send icon"></i>
+              Tell others about us.
+            </div>
+            <div class="content" style="width: 100%; text-align: center;">
+              <div class="ui one column grid">
+                <div class="row" style="text-align: center;">
+                  <div class="column"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fprayash25.github.io%2Fsuman-sir%2F%2F&title=Cuboat%20project&description=Cuboat&quote=Cuboat" style="text-decoration: solid; color: white;"><div style="margin-bottom: 5px; border: 1px solid rgb(255, 255, 255); width: 100%; height: 50px; font-size: 30px;" class="amodal">Facebook</div></a></div>
+                  
+                  <div class="column"><a href="https://api.whatsapp.com/send?text=Cuboat%20project%0D%0Ahttps%3A%2F%2F%2Fhttps://prayash25.github.io/suman-sir/%0D%0ACuboat" style="text-decoration: solid; color: white;"><div style="margin-bottom: 5px; border: 1px solid rgb(255, 255, 255); width: 100%; height: 50px; font-size: 30px;" class="amodal">Whatsapp</div></a></div>
 
+                  <div class="column"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fprayash25.github.io/suman-sir/%2F" style="text-decoration: solid; color: white;"><div style="margin-bottom: 5px; border: 1px solid rgb(255, 255, 255); width: 100%; height: 50px; font-size: 30px;" class="amodal">LinkedIn</div></a></div>
+                
+                  <div class="column"><a href="https://t.me/share/url?url=https%3A%2F%2Fprayash25.github.io/suman-sir/%2F&text=Cuboat" style="text-decoration: solid; color: white;"><div style="margin-bottom: 5px; border: 1px solid rgb(255, 255, 255); width: 100%; height: 50px; font-size: 30px;" class="amodal">Telegram</div></a></div>
+                
+                  <div class="column"><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fprayash25.github.io/suman-sir/%2F&media=&description=Cuboat%20project" style="text-decoration: solid; color: white;"><div style="margin-bottom: 5px; border: 1px solid rgb(255, 255, 255); width: 100%; height: 50px; font-size: 30px;" class="amodal">Pinterest</div></a></div>
+                </div>
+                <!-- <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div> -->
+              </div>
+            </div>
+            <div class="actions">
+              <div class="ui red basic cancel inverted button">
+                <i class="remove icon"></i>
+                cancel
+              </div>
+              <!-- <div class="ui green ok inverted button">
+                <i class="checkmark icon"></i>
+                Yes
+              </div> -->
+            </div>
+          </div>
+          <script id="modal">
+            const modal = () => {
+              console.log('ok1');
+              $('.ui.basic.modal')
+                .modal('show');
+
+            }
+      </script>
+         <!-- <button style="background-color: rgb(115, 114, 114); border-radius: 20px; color: rgb(255, 255, 255); width: 170px; height: 50px; position: fixed; top: 50%; text-align: center;">Subscribe Us</button> -->
+        </div>
+        
+    <footer style="">
+      <div id="content" >
+        <div class="ui grid container" style="margin-left: 40px; margin-right: auto; text-align: center;position: fixed;top: 70%;z-index: 15; display: flex; justify-content: space-around;">
+            <div class="four wide column" style="text-align: center ;">
+                <p style="color: rgb(0, 0, 0);">A project by</p>
+                <a href="" style=" z-index:15;"><img src="image/NITA2.png" style="width: 100%;" alt=""></a>
+            </div>
+            <div class="four wide column" style="text-align: center ;">
+              <p style="color: rgb(0, 0, 0);">An intiative of</p>
+              <a href="" style=" z-index:15;"><img src="image/1Stop_logo.png" style="width: 100%;" alt=""></a>
+            </div>
+            <div class="four wide column">
+              <p style="color: rgb(0, 0, 0);">With Collaboration</p>
+              <a href="" style=" z-index:15;"><img src="image/1Stop_logo.png" style="width: 100%;" alt=""></a>
+            </div>
+            <div class="four wide column">
+              <p style="color: rgb(0, 0, 0);">With Collaboration</p>
+              <a href="" style=" z-index:15;"><img src="image/1Stop_logo.png" style="width: 100%;" alt=""></a>
+            </div>
+          </div>
+        
+    </div>
     </footer>
 </body>
 </html>
