@@ -20,23 +20,29 @@
     <style>
      body{
        height: 100%;
+       
      }
      .amodal:hover{
        border: 1px solid rgb(223, 223, 0)!important; 
+       transition-duration: 1.5s;
      }
      #lbutton:hover{
        border: 3px solid white!important;
        color: white!important;
+       transition-duration: 0.5s;
      }
      #sbutton:hover{
        border: 3px solid white!important;
        color: white!important;
+       transition-duration: 0.5s;
      }
      .anav:hover{
        color: rgb(223, 223, 0)!important;
+       transition-duration: 2s!important;
      }
      .afoot:hover{
        opacity: 1!important;
+       transition-duration: 0.5s;
      }
      @media only screen and (min-width: 901px) {
        #smenu{display: none;}
@@ -51,7 +57,8 @@
      #lbutton{display: none;}
      #video{
        position: initial !important;;
-       /* width: 100%!important; */
+       width: 105%!important;
+       height: 120%!important;
        margin-right: 0px!important;
        top: 15px!important;
        left: 0px!important;
@@ -66,6 +73,20 @@
 
      }
     }
+    /* #anim{
+      animation: dim 6s ease-out 1.5s 1 alternate;     
+    }
+    @keyframes dim {
+      from{ */
+          /* background-color: rgba(0, 0, 0, 0.607); */
+          /* opacity: 1;
+      }
+      to{ */
+         /* background-color: rgba(0, 0, 0, 0); */
+         /* display: none;
+         opacity: 0;
+      }
+    } */
     </style>
 </head>
 <body>
@@ -83,7 +104,7 @@
               <!-- Goto -->
               <!-- <i class="dropdown icon"></i> -->
               <!-- <div class="menu"> -->
-                <a class="item anav" href="#header" style="color: white;font-size:19px; margin-right: 2px;">Application</a>
+                <a class="item anav" href="try.html" style="color: white;font-size:19px; margin-right: 2px;">Application</a>
                 <a class="item anav" href="#acheivers" style="color: white;font-size:19px;margin-right: 2px;">Technology</a>
                 <a class="item anav" href="#faculty" style="color: white;font-size:19px;margin-right: 2px;">Research</a>
                 <!-- <a class="item" href="#features">Features</a> -->
@@ -132,9 +153,17 @@
                 ;
             </script>
     </nav>
+    <!-- <section id="anim" style="width: 100%!important; height: 100%!important; z-index: 1000; background-color: #00000090
+    ;">
+      
+        <video autoplay muted id="anima" style="width: 100%!important;height: 100%!important; position: fixed;top:0px;z-index:1000;">
+          <source src="image/anim1.mp4" type="video/mp4">
+        </video>
+
+    </section> -->
     <section id="pvideo" style="width: 100%;">
       <div style="width: 100%; height: 100%;">
-        <video autoplay muted loop id="video" style="width: 100%!important;height: 100%!important; object-fit: cover; position: fixed;top:0px;z-index: 3;">
+        <video autoplay muted loop id="video" style="width: 100%;height: 100%!important; object-fit: cover; position: fixed;top:0px;z-index: 3;">
             <source src="image/header.mp4" type="video/mp4">
           </video>
         <div id="contentan" style="text-align: center;">
@@ -142,7 +171,7 @@
          <!-- <p style="color: rgb(230, 150, 3);position: relative; top: 30%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sapiente ut deserunt cum totam animi mollitia id cumque earum aperiam!</p> -->
           <!-- <a href="" style="color: rgb(0, 0, 0); width: 120px; height: 50px; position: fixed; top: 40%; text-align: center;">Subscribe Us</a> -->
           <button style="color: rgba(255, 255, 255, 0.747); width: 120px; height: 50px; position: fixed; top: 40%; text-align: center;border-radius: 30px; background-color: rgba(240, 248, 255, 0); border: 2px solid rgba(255, 255, 255, 0.735);" onclick="modal()" id="lbutton">send</button>
-          <button style="color: rgba(255, 255, 255, 0.747); width: 120px; height: 50px; position: absolute; top:15%; text-align: center;border-radius: 30px; background-color: rgba(240, 248, 255, 0); border: 2px solid rgba(255, 255, 255, 0.735);" onclick="modal()" id="sbutton">send</button>
+          <button style="color: rgba(255, 255, 255, 0.747); width: 120px; height: 50px;width: 75px;height: 50px;position: absolute;top:-150px;left: 45%; text-align: center;border-radius: 30px; background-color: rgba(240, 248, 255, 0); border: 2px solid rgba(255, 255, 255, 0.735);" onclick="modal()" id="sbutton">send</button>
           
           <div class="ui basic modal" style="width: 300px;">
             <div class="ui icon header">
@@ -191,8 +220,8 @@
         </div>
       </div> 
     </section>   
-    <footer >
-      <div id="lfoot" style=" width: 100%; " >
+    <footer style="margin-top: 0px;">
+      <div id="lfoot" style=" width: 100%;" >
         <!-- <div class="ui grid container" style="margin-left: auto;margin-right: auto; text-align: center;position: fixed;top: 80%;z-index: 15; display: flex; justify-content: space-around; flex-shrink:2; left: 4%; right: 4%;"> -->
           <div class="ui four column centered grid" style="margin-left: auto;margin-right: auto; text-align: center;position: fixed;top: 80%;z-index: 15; ">
             <div class="column" style="text-align: center ;">
@@ -214,23 +243,23 @@
           </div>
       </div>
       <div id="sfoot" style="background-color:rgb(217, 217, 7); width: 100%;">
-       <div class="ui four column grid">
-        <div class="row">
-          <div class="column">
+       <div class="ui four column grid" style="background-color:rgb(217, 217, 7);">
+        <div class="row" style="margin: 10px;">
+          <div class="column" style="width: 200px;">
             <p style="color: rgb(255, 255, 255); opacity: 0.9;">A project by</p>
             <a href="" style=" z-index:15; opacity: 0.6;" class="afoot"><img src="image/NITA5.png" style="width: 100%!important;" alt=""></a>
           </div>
         </div>
-        <div class="row">
-          <div class="column"><p style="color: rgb(255, 255, 255); opacity: 0.9">An intiative of</p>
+        <div class="row" style="margin: 10px;">
+          <div class="column" style="width: 200px;"><p style="color: rgb(255, 255, 255); opacity: 0.9">An intiative of</p>
             <a href="" style=" z-index:15; opacity: 0.6"  class="afoot"><img src="image/Anarc4.png" style="width: 100%!important;" alt=""></a></div>
         </div>
-        <div class="row">
-          <div class="column"><p style="color: rgb(255, 255, 255); opacity: 0.9">Sponsors</p>
+        <div class="row" style="margin: 10px;">
+          <div class="column" style="width: 200px;"><p style="color: rgb(255, 255, 255); opacity: 0.9">Sponsors</p>
             <a href="" style=" z-index:15;opacity: 0.6"  class="afoot"><img src="image/1Stop_logo.png" style="width: 100%!important;" alt=""></a></div>
         </div>
-        <div class="row">
-          <div class="column"><p style="color: rgb(255, 255, 255); opacity: 0.9">With Collaboration</p>
+        <div class="row" style="margin: 10px;">
+          <div class="column" style="width: 200px;"><p style="color: rgb(255, 255, 255); opacity: 0.9">With Collaboration</p>
             <a href="" style=" z-index:15; opacity: 0.6" class="afoot"><img src="image/1Stop_logo.png" style="width: 100%!important;" alt=""></a></div>
         </div>
       </div>
