@@ -73,20 +73,23 @@
 
      }
     }
-    /* #anim{
-      animation: dim 6s ease-out 1.5s 1 alternate;     
+    #anim{
+      animation: loading 10s ease-in-out 1.5s 1 alternate;     
     }
-    @keyframes dim {
-      from{ */
-          /* background-color: rgba(0, 0, 0, 0.607); */
-          /* opacity: 1;
+    @keyframes loading {
+      from{
+          background-color: #000000;
+          opacity: 1;
+          /* display: initial!important; */
+          /* transform: translateY(0px); */
       }
-      to{ */
-         /* background-color: rgba(0, 0, 0, 0); */
-         /* display: none;
-         opacity: 0;
+      to{
+         background-color: rgba(0, 0, 0, 0);
+         /* display: initial!important; */
+         opacity: 0; 
+         /* transform: translateY(-100%); */
       }
-    } */
+    } 
     </style>
 </head>
 <body>
@@ -153,14 +156,6 @@
                 ;
             </script>
     </nav>
-    <!-- <section id="anim" style="width: 100%!important; height: 100%!important; z-index: 1000; background-color: #00000090
-    ;">
-      
-        <video autoplay muted id="anima" style="width: 100%!important;height: 100%!important; position: fixed;top:0px;z-index:1000;">
-          <source src="image/anim1.mp4" type="video/mp4">
-        </video>
-
-    </section> -->
     <section id="pvideo" style="width: 100%;">
       <div style="width: 100%; height: 100%;">
         <video autoplay muted loop id="video" style="width: 100%;height: 100%!important; object-fit: cover; position: fixed;top:0px;z-index: 3;">
@@ -283,5 +278,13 @@
     </div> -->
     </div>
     </footer>
+
+    <section id="anim" style="width: 100%!important; height: 100%!important;z-index:1000;position: fixed;top:10px;opacity: 1; display: none; ">
+      <!-- -->
+      <video autoplay muted loop id="anima" style="width: 100%!important;height: 100%!important; ">
+        <source src="image/anim.mp4" type="video/mp4">
+      </video>
+
+  </section>
 </body>
 </html>
