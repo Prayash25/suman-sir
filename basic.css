@@ -1,0 +1,101 @@
+#header {
+    /* background-: url(image/header.mp4); */
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-position-y: 63px!important; */
+    height:95%;
+    width: 100%;
+    background-repeat: no-repeat;
+    margin-top: 2px;
+    background-position: 0px -50px;
+    opacity: 0.9;
+    text-align: center;
+    /* justify-content: center; */
+    color: orange;  
+    font-weight: 999;
+    font-size: larger;
+    
+ }
+#contentan{
+    position: relative;
+    /* bottom: 10%; */
+    text-align: center;
+    z-index: 5;
+ }
+
+
+ 
+     body{
+       height: 100%;
+       
+     }
+     .amodal:hover{
+       border: 1px solid rgb(223, 223, 0)!important; 
+
+       /* transition-duration: 1.5s; */
+     }
+     #lbutton:hover{
+       border: 3px solid white!important;
+       color: white!important;
+       transition-duration: 0.5s;
+     }
+     #sbutton:hover{
+       border: 3px solid white!important;
+       color: white!important;
+       transition-duration: 0.5s;
+     }
+     .anav:hover{
+       color: rgb(255, 123, 0)!important;
+       transition-duration: 2s!important;
+     }
+     .afoot:hover{
+       opacity: 1!important;
+       transition-duration: 0.5s;
+     }
+     @media only screen and (min-width: 940px) {
+       #smenu{display: none;}
+       #sfoot{display: none;}
+       #sbutton{display: none;}
+     }
+     @media only screen and (max-width: 939px) {
+  /* For mobile phones: */
+     #lmenu{display: none;}
+     /* #smenu{display: contents !important;;} */
+     #lfoot{display: none;}
+     #lbutton{display: none;}
+     #video{
+       position: initial !important;;
+       width: 105%!important;
+       height: 120%!important;
+       margin-right: 0px!important;
+       top: 15px!important;
+       left: 0px!important;
+       /* object-fit: cover!important; */
+     }
+                     
+     #cnav{
+       /* width: 95%!important; */
+       /* margin-right: 5%; */
+     }
+     .navdrop{
+        
+     }
+    }
+    #anim{
+      animation: loading 10s ease-in-out 1.5s 1 alternate;     
+    }
+    @keyframes loading {
+      from{
+          background-color: #000000;
+          opacity: 1;
+          /* display: initial!important; */
+          /* transform: translateY(0px); */
+      }
+      to{
+         background-color: rgba(0, 0, 0, 0);
+         /* display: initial!important; */
+         opacity: 0; 
+         /* transform: translateY(-100%); */
+      }
+    } 
+
