@@ -46,7 +46,8 @@
      }
      .anav:hover{
        color: rgb(255, 123, 0)!important;
-       transition-duration: 2s!important;
+       /* transition-duration: 2s!important; */
+       background-color: #7272725e!important;
        /* border-bottom:1px solid rgb(255, 123, 0)!important; */
      }
 
