@@ -47,7 +47,14 @@
      .anav:hover{
        color: rgb(255, 123, 0)!important;
        transition-duration: 2s!important;
+       /* border-bottom:1px solid rgb(255, 123, 0)!important; */
      }
+
+     .anav:active{
+      color: rgb(255, 123, 0)!important;
+       transition-duration: 2s!important;
+       /* border-bottom:1px solid rgb(255, 123, 0)!important; */
+      }
      .afoot:hover{
        opacity: 1!important;
        transition-duration: 0.5s;
